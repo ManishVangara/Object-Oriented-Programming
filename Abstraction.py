@@ -22,6 +22,8 @@ print(d)
 print(c.distance(origin))
 print(c)
 
+print(Coordinate.distance(c, origin))
+
 # Animal Class
 
 class Animal:
@@ -32,6 +34,8 @@ class Animal:
   ## Getter methods
   def get_age(self):
     return self.age
+  def get_name(self):
+    return self.name
 
   # Setter methods
   def set_age(self, newage):
@@ -45,5 +49,7 @@ class Animal:
   # Getters and Setters should be used outside the class to access data attributes.
 
 a = Animal(3)
-print(a.age)
+# print(a.age)
+a.set_name('MANNU')
 print(a.get_age())
+print(a.get_name())
